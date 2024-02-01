@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verticalism - sala-lauak</title>
+    <link rel="shortcut icon" href="img/brand-logo-title.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="h-full">
+    <nav class="w-full fixed bg-gray-900 flex drop-shadow-lg flex-col z-50">
+        <div class="default-con h-14 pl-4 pr-4 flex">
+            <!-- logo -->
+            <div class="logo w-full h-full flex items-center justify-center">
+                <a href="index.html" class="logo flex items-center p-4 w-56">
+                    <img class="" src="img/brand-logo-text.png" alt="logo">
+                </a>            
+            </div>
+        </div>
+    </nav>
+    <!-- navbar responsive -->
+        <div class="res fixed w-full -translate-y-48 z-40 bg-gray-900 h-auto px-4 transition-all ease-out duration-300 shadow-lg" id="nav-res">
+            <div class="search p-4 border-t-2 flex justify-center items-center gap-2">
+                <a href="" class="text-center font-bold text-white">About</a>
+            </div>
+            <div class="search p-4 border-t-2 flex justify-center items-center gap-2">
+                <a href="" class="text-center font-bold text-white">Contact</a>
+            </div>
+        </div>
+    <main class="h-auto w-auto flex">
+        <!-- main -->
+        <div class="main-content w-full flex flex-col gap-4 bg-slate-200">
+            <div class="top mt-14"></div>
+            <!-- founded -->
+            <div class="founded flex px-4">
+                <div class="found-number w-full">
+                    <h1 class="text-2xl text-gray-800 font-bold">Food store i think?...</h1>
+                </div>
+                <div class="refresh w-full flex justify-end">
+                    <a href="index.html" type="button" class="p-2 flex gap-2 items-center text-white drop-shadow-lg bg-green-600 rounded-md hover:bg-green-500"><p class="font-bold">Refresh</p><i class="fa-solid fa-arrows-rotate"></i></a>
+                </div>
+            </div>
+            <!-- peringatan -->
+            <div class="flex items-center justify-center px-4 border-t-2 border-gray-600 mx-4">
+                <div class="warning w-96 p-2 rounded-md bg-red-700 flex items-start justify-center mt-10">
+                    <h1 class="font-bold text-white w-fit text-center">Barang yang anda liat hanyalah ilustrasi semata!. kondisi di lapangan bisa jauh berbeda dengan yang ada di foto.</h1>
+                </div>
+            </div>
+            
+            <!-- barang container -->
+            <div class="link-1 flex gap-3 p-3 justify-center md:px-20 flex-col pb-20">
+                <div class="img w-full bg-white shadow-lg flex flex-col rounded-lg">
+                    <div class="w-full sm:w-auto sm:h-auto flex justify-center items-center p-4">
+                        <img class="rounded-full w-48 h-48 max-w-max" src="img/sala_lauak.jpg" alt="">
+                    </div>
+                    <div class="p-4 w-full h-auto flex flex-col justify-center">
+                        <h1 class="font-bold text-center">Sala Lauak</h1>
+                        <p class="py-2 text-center">Sala lauak merupakan hidangan berbentuk gumpalan sebesar ibu jari yang terbuat dari adonan daging ikan yang dihaluskan dan dicampur tepung</p>
+                        <div class="terjual flex flex-col object-fill justify-center p-10 items-center gap-8">
+                          <div class="status flex justify-center">
+                            <h1 class="font-bold text-2xl text-center">Silahkan di order pada form tersebut</h1>
+                          </div>
+                          <form action="" class="flex flex-col shadow-lg p-8 sm:w-96 rounded-lg">
+                              <label for="" class="nama font-bold">Nama</label>
+                              <input type="text" class="border-2" placeholder="Nama..." required id="nama">
+                              <label for="" class="jurusan font-bold">Jurusan</label>
+                              <select name="jurusan" id="jurusan">
+                                <option value="TKJ">TKJ</option>
+                                <option value="PSPTV">PSPTV</option>
+                                <option value="RPL">RPL</option>
+                                <option value="AKL">AKL</option>
+                                <option value="MM/DKV">MM/DKV</option>
+                                <option value="BD">BD</option>
+                                <option value="MP">MP</option>
+                                <option value="LP">LP</option>
+                                <option value="Guru / Karyawan">Guru / Karyawan sekolah</option>
+                              </select>
+                              <label for="" class="jumlah font-bold">Jumlah Makanan/Minuman</label>
+                              <select name="jumlah" id="jumlah">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                              </select>
+                              <label for="" class="catatan font-bold">Catatan (opsional)</label>
+                              <input type="text" class="border-2" placeholder="catatan..." required id="catatan">
+                              <div class="submit flex py-4 items-center justify-center">
+                                <button type="submit" onclick="sendwhatsapp('sala_ulak')" class="bg-blue-600 p-2 rounded-md w-full text-white font-bold">Submit</button>
+                              </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of card -->
+            </div>
+            <!-- show how much item -->
+        </div>
+    </main>
+    <footer class="flex flex-col sm:px-10 bg-gray-900 text-white">
+        <!-- col-1 -->
+        <div class="footer-col-1 flex flex-col sm:flex-row p-10">
+            <div class="footer-logo w-full flex justify-center items-center">
+                <img class="w-auto h-auto p-2" src="img/brand-logo-text.png" alt="brand-logo">
+            </div>         
+            <div class="footer-links-container w-full p-5 flex justify-center items-center font-bold">
+                <div class="footer-links-content flex sm:flex-col flex-wrap gap-4 justify-center">
+                    <a href="#" class="hover:text-blue-600 transition-all duration-300">Services</a>
+                    <a href="#" class="hover:text-blue-600 transition-all duration-300">Contact</a>
+                    <a href="#" class="hover:text-blue-600 transition-all duration-300">About Us</a>
+                </div>
+            </div>               
+        </div>
+        <div class="footer-col-2 mx-4 p-10 flex justify-center items-center flex-col border-solid border-t-2 border-white gap-6">
+            <div class="text">
+                <p class="font-semibold text-center">@Copyright By SMKN 1 Bondowoso</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="js/index.js"></script>
