@@ -21,11 +21,13 @@ function clickFilter (id,){
        var jurusan = document.getElementById("jurusan").value;
        var jumlah = document.getElementById("jumlah").value;
        var catatan = document.getElementById("catatan").value;
+       var kelas = document.getElementById("kelas").value
 
        var url = "https://wa.me/" + phonenumber + "?text="
        +"*Name :* "+nama+"%0a"
        +"*Makanan :* "+makanan+"%0a"
        +"*Jurusan :* "+jurusan+"%0a"
+       +"*Kelas:*" +kelas+"%0a"
        +"*Jumlah:* "+jumlah+"%0a"
        +"*Catatan :* "+catatan
        +"%0a%0a"
