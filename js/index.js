@@ -33,7 +33,7 @@ function clickFilter (id,){
        +"%0a%0a"
        +"saya "+nama+" ingin memesan makanan/minuman tersebut";
 
-       window.open(url, '_blank').focus();
+       window.open(url).focus();
        alert('terima kasih sudah memesan')
        window.location.href = 'index.html'
      }
